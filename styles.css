@@ -209,6 +209,7 @@ nav {
   position: relative;
   padding: 0.5rem 0;
   transition: color var(--transition-fast);
+  
 }
 
 .nav-links li a:hover, 
@@ -242,7 +243,7 @@ nav {
 }
 
 .nav-links .btn-primary {
-  margin-left: var(--space-sm);
+  margin-left: var(--space-xs);
 }
 
 .mobile-menu-icon {
@@ -311,13 +312,13 @@ section:nth-child(even) {
 
 .cta .btn-primary {
   background-color: var(--color-white);
-  color: var(--color-primary);
+  color: var(--color-black);
   border-color: var(--color-white);
 }
 
 .cta .btn-primary:hover {
   background-color: transparent;
-  color: var(--color-white);
+  color: var(--color-primary-light);
 }
 
 /* Footer */
