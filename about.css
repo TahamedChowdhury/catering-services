@@ -1,0 +1,257 @@
+/* About Page Styles */
+
+/* Our Story Section */
+.our-story {
+  padding: var(--space-xl) 0;
+}
+
+.story-content {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-text h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  position: relative;
+  padding-bottom: var(--space-xs);
+}
+
+.story-text h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.story-text p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.story-image {
+  flex: 1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.story-image:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  z-index: -1;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.story-image:hover img {
+  transform: scale(1.03);
+}
+
+/* Philosophy Blocks */
+.our-philosophy {
+  background-color: var(--color-bg);
+}
+
+.philosophy-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  justify-content: center;
+  margin-top: var(--space-lg);
+}
+
+.philosophy-block {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  background-color: var(--color-white);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform var(--transition-medium);
+}
+
+.philosophy-block:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.philosophy-block h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.philosophy-block p {
+  color: var(--color-text-light);
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.team-member {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-medium);
+  text-align: center;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-photo {
+  height: 280px;
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.team-member:hover .member-photo img {
+  transform: scale(1.05);
+}
+
+.team-member h3 {
+  margin: var(--space-sm) 0 0.25rem;
+  color: var(--color-primary);
+}
+
+.member-title {
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+}
+
+.member-bio {
+  padding: 0 var(--space-sm) var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+/* Achievements Section */
+.achievements {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.achievements .section-title {
+  color: var(--color-white);
+}
+
+.achievements .section-title:after {
+  background-color: var(--color-white);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.achievement {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-medium);
+}
+
+.achievement:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.achievement-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.achievement-text {
+  font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .story-content {
+    flex-direction: column;
+  }
+  
+  .story-image:before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .philosophy-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .philosophy-block {
+    max-width: 100%;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

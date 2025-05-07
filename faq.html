@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Elegant Eats Catering</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="faq.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="icon"><img src="icon-7359529_1280.png"></div>
+      <div class="logo">
+        <a href="index.html">Elegant Eats</a>
+      </div>
+      <nav>
+        <div class="mobile-menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html" class="active">FAQ</a></li>
+          <li><a href="contact.html" class="btn-primary">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about our catering services</p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-categories">
+          <button class="category-btn active" data-category="all">All Questions</button>
+          <button class="category-btn" data-category="booking">Booking Process</button>
+          <button class="category-btn" data-category="food">Food & Menu</button>
+          <button class="category-btn" data-category="service">Service & Logistics</button>
+          <button class="category-btn" data-category="pricing">Pricing & Payment</button>
+        </div>
+
+        <div class="faq-search">
+          <input type="text" id="faqSearch" placeholder="Search for questions...">
+        </div>
+
+        <div class="faq-list">
+          <!-- Booking Process Questions -->
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i><h3>How far in advance should I book your catering services?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>We recommend booking our services as soon as you have your event date secured. For peak seasons (May-September and December), we suggest booking 6-12 months in advance. For smaller events during non-peak times, 2-3 months notice is usually sufficient. However, we occasionally have last-minute availability, so don't hesitate to contact us even for short-notice events.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>What information do you need to provide a quote?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>To provide you with an accurate quote, we need the following details:</p>
+              <ul>
+                <li>Event date and time</li>
+                <li>Event location</li>
+                <li>Approximate guest count</li>
+                <li>Type of event</li>
+                <li>Service style preference (buffet, plated, family-style, etc.)</li>
+                <li>Any specific menu preferences or dietary requirements</li>
+                <li>Any additional services needed (bar service, staffing, rentals, etc.)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Food & Menu Questions -->
+          <div class="faq-item" data-category="food">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>Can you accommodate dietary restrictions and allergies?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! We're experienced in accommodating various dietary needs including vegetarian, vegan, gluten-free, dairy-free, and most food allergies. Please inform us of any dietary restrictions during the planning process, and we'll create appropriate menu options. For severe allergies, we take extra precautions in our food preparation but do recommend discussing specific concerns directly with our chef.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="food">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>Do you offer menu tastings?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we offer menu tastings for confirmed clients who have signed a contract and paid a deposit. Tastings typically include samples of your selected appetizers, entrées, and sides. For wedding catering packages over a certain value, we offer complimentary tastings for up to 4 people. For smaller events, tastings are available for a fee that can be applied to your final balance if you proceed with booking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="food">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i><h3>Can we customize our menu?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! Custom menus are our specialty. While we have sample menus to inspire you, we're happy to create a bespoke menu tailored to your preferences, theme, or cultural background. Our executive chef enjoys the creative challenge of designing unique menus that reflect your personal taste and event vision.</p>
+            </div>
+          </div>
+
+          <!-- Service & Logistics Questions -->
+          <div class="faq-item" data-category="service">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>Do you provide serving staff for events?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we provide professional service staff including servers, bartenders, and event captains for your event. Our staff is professionally trained, uniformed, and experienced in providing exceptional service. The number of staff required depends on your guest count, menu selections, and service style. We typically recommend one server per 20-25 guests for plated service and one server per 30-35 guests for buffet service.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="service">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i><h3>What is included in your basic catering package?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Our standard catering package includes:</p>
+              <ul>
+                <li>Food preparation and delivery</li>
+                <li>Professional service staff for setup, food service, and cleanup</li>
+                <li>Standard white china plates, stainless steel flatware, and glassware</li>
+                <li>White linen napkins</li>
+                <li>Buffet setup with stainless chafing dishes and serving utensils</li>
+                <li>Water service for guests</li>
+              </ul>
+              <p>Additional items such as specialty rentals, bar service, decorative elements, and cake cutting can be added to your package for an additional fee.</p>
+            </div>
+          </div>
+
+          <!-- Pricing & Payment Questions -->
+          <div class="faq-item" data-category="pricing">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i><h3>What is your typical price range?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Our pricing varies based on several factors including menu selection, service style, guest count, event date, and location. As a general guideline:</p>
+              <ul>
+                <li>Buffet service typically ranges from $45-75 per person</li>
+                <li>Plated service typically ranges from $60-100 per person</li>
+                <li>Family-style service typically ranges from $55-85 per person</li>
+                <li>Cocktail receptions with heavy hors d'oeuvres typically range from $40-70 per person</li>
+              </ul>
+              <p>These ranges include food and basic service but exclude bar service, specialty rentals, and service charges. We're happy to work with various budgets and can customize a package to meet your needs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="pricing">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>What is your payment schedule?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Our standard payment schedule is as follows:</p>
+              <ul>
+                <li>25% non-refundable deposit to secure your date and our services</li>
+                <li>50% of the remaining balance due 60 days before your event</li>
+                <li>Final balance due 14 days before your event, along with final guest count</li>
+              </ul>
+              <p>For events booked less than 60 days in advance, an adjusted payment schedule will be provided. We accept payments via credit card, bank transfer, or check.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="pricing">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>Are there any additional fees I should be aware of?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>In addition to the base catering cost, potential additional fees might include:</p>
+              <ul>
+                <li>Service charge (20% of food and beverage total)</li>
+                <li>Travel fee for venues outside our standard service area</li>
+                <li>Extended service hours (events running longer than 5 hours)</li>
+                <li>Site visits for complex venue layouts</li>
+                <li>Special equipment rentals for venues without kitchen facilities</li>
+                <li>Additional staffing for complex service requirements</li>
+              </ul>
+              <p>We're transparent about all costs and will clearly outline any additional fees in your proposal and contract.</p>
+            </div>
+          </div>
+
+          <!-- Additional Questions -->
+          <div class="faq-item" data-category="service">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>Do you provide rentals such as tables, chairs, and linens?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we can coordinate all necessary rentals for your event including tables, chairs, specialty linens, tableware, tents, and decorative items. We work with trusted rental companies to ensure quality and reliability. While we handle the ordering and coordination, rental items are typically billed separately and may require their own contracts and deposits.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="service">
+            <div class="faq-question">
+              <i class="fa-solid fa-lightbulb"></i> <h3>What happens to leftover food after the event?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>Due to health department regulations and food safety concerns, we cannot leave perishable food items that have been out for service. However, any food that hasn't been put out for service can be packaged for you to take home. We're also proud to partner with local food recovery programs to donate eligible unused food whenever possible, in accordance with safe food handling guidelines.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-not-found">
+          <p>Can't find what you're looking for?</p>
+          <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Elegant Eats</h3>
+          <p>Exquisite catering for every occasion</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> info@eleganteatscatering.com</p>
+          <p><strong>Address:</strong> 123 Culinary Way, Gourmet City, GC 12345</p>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">PT</a>
+            <a href="#" class="social-icon">TW</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 MD TAHAMED CHOWDHURY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for mobile menu toggle
+    document.querySelector('.mobile-menu-icon').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+
+    // FAQ accordion functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const answer = question.nextElementSibling;
+        const toggle = question.querySelector('.faq-toggle');
+        
+        // Check if already active
+        const isActive = item.classList.contains('active');
+        
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(faqItem => {
+          faqItem.classList.remove('active');
+          faqItem.querySelector('.faq-answer').style.maxHeight = null;
+          faqItem.querySelector('.faq-toggle').textContent = '+';
+        });
+        
+        // If wasn't active before, open this one
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          toggle.textContent = '−';
+        }
+      });
+    });
+
+    // FAQ category filtering
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const category = button.dataset.category;
+        
+        // Show/hide FAQ items based on category
+        faqItems.forEach(item => {
+          if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // FAQ search functionality
+    const searchInput = document.getElementById('faqSearch');
+    
+    searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      let matchFound = false;
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+        
+        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+          item.style.display = 'block';
+          matchFound = true;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+      
+      document.querySelector('.faq-not-found').style.display = matchFound ? 'none' : 'block';
+    });
+  </script>
+</body>
+</html>

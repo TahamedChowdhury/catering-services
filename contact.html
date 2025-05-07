@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Elegant Eats Catering</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="icon"><img src="icon-7359529_1280.png"></div>
+      <div class="logo">
+        <a href="index.html">Elegant Eats</a>
+      </div>
+      <nav>
+        <div class="mobile-menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="btn-primary">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Let's discuss how we can make your event extraordinary</p>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Call Us</h3>
+            <p>(555) 123-4567</p>
+            <p class="availability">Available Mon-Fri, 9am-6pm</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email Us</h3>
+            <p>info@eleganteatscatering.com</p>
+            <p class="availability">We respond within 24 hours</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Visit Us</h3>
+            <p>123 Culinary Way, Gourmet City, GC 12345</p>
+            <p class="availability">By appointment only</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="contact-columns">
+          <div class="form-column">
+            <h2>Request a Quote</h2>
+            <p>Fill out the form below and we'll get back to you with a customized quote for your event.</p>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="eventDate">Event Date *</label>
+                  <input type="date" id="eventDate" name="eventDate" required>
+                </div>
+                
+                <div class="form-group half">
+                  <label for="guestCount">Guest Count *</label>
+                  <input type="number" id="guestCount" name="guestCount" min="1" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="eventType">Event Type *</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+              </div>
+              
+              <button type="submit" class="btn-primary">Submit Request</button>
+            </form>
+          </div>
+          
+          <div class="info-column">
+            <div class="info-card">
+              <h3>Why Choose Us</h3>
+              <ul class="benefits-list">
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span class="benefit-text">Customized menus tailored to your event</span>
+                </li>
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span class="benefit-text">Professional staff with years of experience</span>
+                </li>
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span class="benefit-text">Fresh, high-quality ingredients</span>
+                </li>
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span class="benefit-text">Flexible packages for every budget</span>
+                </li>
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span class="benefit-text">Impeccable attention to detail</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="testimonial-card">
+              <blockquote>
+                "Elegant Eats exceeded all our expectations. The food was extraordinary, the presentation was beautiful, and the service was flawless!"
+              </blockquote>
+              <cite>— Jennifer & Robert, Wedding Clients</cite>
+            </div>
+            
+            <div class="hours-card">
+              <h3>Business Hours</h3>
+              <ul class="hours-list">
+                <li><span>Monday - Friday:</span> 9:00 AM - 6:00 PM</li>
+                <li><span>Saturday:</span> 10:00 AM - 4:00 PM</li>
+                <li><span>Sunday:</span> Closed</li>
+              </ul>
+              <p class="note">Tastings by appointment only</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <h2 class="section-title">Our Location</h2>
+        <div class="map-placeholder">
+          <div class="map-overlay">
+            <div class="map-text">
+              <h3>Elegant Eats Catering</h3>
+              <p>123 Culinary Way<br>Gourmet City, GC 12345</p>
+              <a href="#" class="btn-secondary">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Elegant Eats</h3>
+          <p>Exquisite catering for every occasion</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> info@eleganteatscatering.com</p>
+          <p><strong>Address:</strong> 123 Culinary Way, Gourmet City, GC 12345</p>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">PT</a>
+            <a href="#" class="social-icon">TW</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 MD TAHAMED CHOWDHURY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for mobile menu toggle
+    document.querySelector('.mobile-menu-icon').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+
+    // Simple form validation
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Basic validation
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const eventDate = document.getElementById('eventDate').value;
+      const guestCount = document.getElementById('guestCount').value;
+      const eventType = document.getElementById('eventType').value;
+      
+      if (!name || !email || !eventDate || !guestCount || !eventType) {
+        alert('Please fill out all required fields.');
+        return;
+      }
+      
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      
+      // Form submission success
+      alert('Thank you for your inquiry! We will contact you within 24 hours.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
